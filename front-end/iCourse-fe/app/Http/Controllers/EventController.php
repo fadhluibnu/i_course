@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-// use Illuminate\Console\Scheduling\Event;
-use Illuminate\Http\Request;
 use Inertia\Inertia;
+use Inertia\Response;
 
 class EventController extends Controller
 {
-    public function show()
+    public function show(): Response
     {
         return Inertia::render('/Home', [
             'user' => [
